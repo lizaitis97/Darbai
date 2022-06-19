@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/2b80b802ee.js" crossorigin="anonymous"></script>
     
    <style>
     body {
-        margin: 0;
+        margin: 0 ;
         font-family: 'Open Sans', sans-serif;
     }
     
@@ -29,8 +29,8 @@
         position: fixed;
         width: 100%;
         z-index: 100;
-        background-color: purple;
-
+        background: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+        
     }
     
     .flex {
@@ -205,14 +205,10 @@
        }
        .row3{
         display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
         text-align: center;
-        
-}
+        }
 
-      .card-1  {
+      .card   {
         border-radius: 1rem;
         height: 205px;
         width: 255px;
@@ -220,80 +216,86 @@
         bottom: 145px;
         left: 140px;
         box-shadow: 0 3px 20px 0 rgb(0 0 0 / 12%);
-} 
-     .cardtext2 h5{
-        font-size: 1.25em;
-        text-align: left;
-        position: relative;
-        top: 30px;
-        left: 20px;
-     }
-     .cardtext2 p{
-       color: #6c757d;
-       position:relative;
-       top: 20px;
-       height: 52px;
-       width: 215px;
-       left: 20px;
-       text-align: left;
-       
-     }
-      
+        margin: 20px;}
 
-        .card-1:hover{
-     background-color: #9629e6;
-     color: white;
-     transition: all ease 0.5s;
-     
+        
+    .card1icon{
+        width: 60px;
+        height: 40px;
+        position: relative;
+        top: 20px;
+        right: 90px;
+        
+       
     }
     
-      .card-2  {
-        border-radius: 1rem;
-        box-shadow: 0 3px 20px 0 rgb(0 0 0 / 12%);
-        height: 205px;
-        width: 255px;
+ 
+     .cardtext1 {
+        font-size: 22px;
+        text-align: left;
         position: relative;
-        bottom: 145px;
-        left: 180px;
-
-        } 
-        .card-2:hover{
-    background-color: #9629e6;
-    color: white;
-    transition: all ease 0.5s;
+        left: 20px;
+        
+     } 
+     .cardtext1 p{
+        font-size: 15px;
+        width: 200px;
+        position: relative;
+        bottom: 20px;
+        line-height: 28px;
+        
+        
+     }
+    
+     .card:hover{
+     background-color: #9629e6;
+     transition: all ease 0.5s;
+     color: white ;
+     
+    }
+    #cardicon{
+    position: relative;
+    right: 90px;
+    top: 20px;
+    width: 40px;
+    }
+    
+.container3{
+    max-width: 100%;
+       }
+   .section-three{
+    background: rgb(242, 245, 248);
+    position: relative;
+    bottom: 150px;
+    
+    
+  }
+.s3textbox {
+    width: 480px;
+    position: relative;
+    margin: 150px;  
+    z-index: 1;  
+    right: 190px;
+    bottom: 500px;
 }
-    
-    
-    
-      .card-3  {
-        border-radius: 1rem;
-        box-shadow: 0 3px 20px 0 rgb(0 0 0 / 12%);
-        height: 205px;
-        width: 255px;
-        position: relative;
-        bottom: 145px;
-        left: 220px;
-    } 
-    .card-3:hover{
-    background-color: #9629e6;
-    color: white;
-    transition: all ease 0.5s;   }
-   
-
-      .card-4  {
-        border-radius: 1rem;
-        box-shadow: 0 3px 20px 0 rgb(0 0 0 / 12%);
-        height: 205px;
-        width: 255px;
-        position: relative;
-        bottom: 145px;
-        left: 260px;
-} 
-.card-4:hover{
-    background-color: #9629e6;
-    color: white;
-    transition: all ease 0.5s;
+.s3textbox p  {
+    line-height: 25px;
+    position: relative;
+    bottom: 30px;
+    color: gray;
 }
+    .s3background{
+        position: relative;
+        left: 500px;
+        top: 200px;
+
+}
+.fa-solid{
+    color: blue;
+    width: 30px;
+}
+       
+    
 
 </style>
 
@@ -369,63 +371,55 @@
        </div>
    </div>
 <div class="row3">
-    <div class="card-1">
-        <div class="card1vidus">
-        <div class="card1text1">
-         <span class="cardicon">
-        
-        </span>
-         </div>
-         <div class="cardtext2">
-            <h5 >Modular</h5>
+    <div class="card 1">
+        <img src="assets/card1.png" id="cardicon">
+        <div class="cardtext1">
+            <h5>Modular</h5>
             <p>All components are built to be used in any combination.</p>
+             </div> 
+             </div> 
+        
+    <div class="card 2">
+        <img src="assets/card1.png" id="cardicon">
+        <div class="cardtext1">
+         <h5>Responsive</h5>
+  <p>Quick is optimized to work for most devices.</p>     
         </div>
+        </div>
+
+    <div class="card 3">
+        <img src="assets/card1.png" id="cardicon">
+        <div class="cardtext1">
+            <h5>Scalable</h5>   
+          <p>Remain consistent while developing new features.</p>     
        </div>
-      </div>
-    <div class="card-2">
-        <div class="card2vidus">
-        <div class="card2text1">
-            <span class="cardicon">
-         </span>
-         </div>
-         <div class="cardtext2">
-            <h5>Responsive</h5>
-            <p>Quick is optimized to work for most devices.</p>
        </div>
-      </div>
+
+    <div class="card 4">
+        <img src="assets/card1.png" id="cardicon">
+        <div class="cardtext1">
+         <h5>Customizable</h5>      
+       <p>Change a few variables and the whole theme adapts.</p>
+      </div>      
     </div>
-    <div class="card-3">
-        <div class="card3vidus">
-        <div class="card3text1">
-            <span class="cardicon">
-         </span>
-         </div>
-         <div class="cardtext2">
-            <h5>Scalable</h5>
-            <p>Remain consistent while developing new features.</p>
+</div>
+ </section>
+ <section class="section-three">
+    <div class="introImage">
+        <img class="s3background" src="assets/delivery-app.svg" alt="">
+    <div class="container3">
+        <div class="s3textbox">
+            <span class="s2text1">ABOUT OUR APP</span>
+            <h2 class="s2text2">Deliver your Product Using AppCo</h2>
+            <p>Quick has all the right tools in order to make your website building process a breeze and automatize your time-consuming tasks in your development workflow.</p>
+            
+                <p> <i class="fa-solid fa-square-check"></i>Tones of SASS variables</p>
+                 <p><i class="fa-solid fa-square-check"></i>Create your own skin to match your brand</p>
+                 <p><i class="fa-solid fa-square-check"></i>Globally orchestrate tactical channels whereas bricks</p>
+                 <p><i class="fa-solid fa-square-check"></i>Use Gulp to prepare all assets for production</p>
+                 <p><i class="fa-solid fa-square-check"></i>Collaboratively predominate vertical manufactured</p>
+        </div> 
        </div>
-      </div>
-    </div>
-    <div class="card-4">
-        <div class="card4vidus">
-        <div class="card4text1">
-            <span class="cardicon">
-         </span>
-         </div>
-         <div class="cardtext2">
-            <h5>Customizable</h5>
-            <p>Change a few variables and the whole theme adapts.</p>
-       </div>
-      </div>
-    </div>
-
-
-  
-
-
-
-
-        </section>
 
 </body>
 </html> 
